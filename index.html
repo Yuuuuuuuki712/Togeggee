@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LIFE SHIFT - あなたの人生を変える瞬間。プロフェッショナルなライフコンサルティングサービス">
     <title>LIFE SHIFT - あなたの人生を変える瞬間</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
-            --primary-color: #3a0ca3;
-            --secondary-color: #4361ee;
-            --accent-color: #f72585;
-            --background-color: #f8f9fa;
-            --text-color: #2b2d42;
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --background-color: #ecf0f1;
+            --text-color: #2c3e50;
+            --light-text-color: #ffffff;
         }
 
         * {
@@ -26,6 +28,7 @@
             background-color: var(--background-color);
             color: var(--text-color);
             line-height: 1.6;
+            font-size: 16px;
         }
 
         .container {
@@ -35,7 +38,7 @@
         }
 
         nav {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.95);
             position: fixed;
             width: 100%;
             z-index: 1000;
@@ -66,14 +69,18 @@
 
         header {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
+            color: var(--light-text-color);
             padding: 150px 0 100px;
             text-align: center;
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
 
-        h1 {
+        h1, h2, h3 {
             font-family: 'Poppins', sans-serif;
+            line-height: 1.2;
+        }
+
+        h1 {
             font-size: 4em;
             margin-bottom: 20px;
             letter-spacing: 2px;
@@ -88,7 +95,7 @@
         .cta-button {
             display: inline-block;
             background-color: var(--accent-color);
-            color: white;
+            color: var(--light-text-color);
             padding: 15px 30px;
             border-radius: 50px;
             text-decoration: none;
@@ -99,7 +106,7 @@
         }
 
         .cta-button:hover {
-            background-color: #e5097f;
+            background-color: #c0392b;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
@@ -143,7 +150,7 @@
 
         .testimonial-section {
             background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-            color: white;
+            color: var(--light-text-color);
             padding: 100px 0;
             clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
         }
@@ -200,7 +207,7 @@
 
         footer {
             background-color: var(--primary-color);
-            color: white;
+            color: var(--light-text-color);
             text-align: center;
             padding: 20px 0;
         }
@@ -217,6 +224,15 @@
             .benefit-grid, .testimonial-grid {
                 grid-template-columns: 1fr;
             }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
         }
 
         .parallax {
@@ -224,6 +240,39 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            z-index: 9999;
+        }
+
+        .cookie-consent button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
         }
     </style>
 </head>
@@ -261,22 +310,22 @@
                 <h2 class="section-title">あなたの人生にもたらす価値</h2>
                 <div class="benefit-grid">
                     <div class="benefit-item">
-                        <i class="fas fa-bullseye"></i>
+                        <i class="fas fa-bullseye" aria-hidden="true"></i>
                         <h3>明確なビジョン</h3>
                         <p>あなたの真の目標を見出し、それを達成するための具体的な道筋を描きます。</p>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-rocket"></i>
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
                         <h3>生産性の飛躍的向上</h3>
                         <p>時間管理と集中力強化のテクニックを習得し、効率的に目標達成を目指します。</p>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-crown"></i>
+                        <i class="fas fa-crown" aria-hidden="true"></i>
                         <h3>自信とリーダーシップ</h3>
                         <p>自己肯定感を高め、周囲に好影響を与えるリーダーシップスキルを培います。</p>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-balance-scale"></i>
+                        <i class="fas fa-balance-scale" aria-hidden="true"></i>
                         <h3>ワークライフバランス</h3>
                         <p>キャリアの成功と充実したプライベートライフの両立を実現します。</p>
                     </div>
@@ -316,48 +365,13 @@
         <section class="section" id="contact">
             <div class="container">
                 <h2 class="section-title">人生の変革は、ここから始まる</h2>
-                <form>
-                    <input type="text" placeholder="お名前" required>
-                    <input type="email" placeholder="メールアドレス" required>
-                    <textarea placeholder="ご相談内容"></textarea>
+                <form id="contact-form">
+                    <label for="name" class="visually-hidden">お名前</label>
+                    <input type="text" id="name" name="name" placeholder="お名前" required>
+                    <label for="email" class="visually-hidden">メールアドレス</label>
+                    <input type="email" id="email" name="email" placeholder="メールアドレス" required>
+                    <label for="message" class="visually-hidden">ご相談内容</label>
+                    <textarea id="message" name="message" placeholder="ご相談内容"></textarea>
                     <button type="submit" class="cta-button">無料相談を予約する</button>
                 </form>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 LIFE SHIFT. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-
-        gsap.from('.benefit-item', {
-            scrollTrigger: {
-                trigger: '#benefits',
-                start: 'top center'
-            },
-            opacity: 0,
-            y: 50,
-            stagger: 0.2,
-            duration: 1
-        });
-
-        gsap.from('.testimonial', {
-            scrollTrigger: {
-                trigger: '#testimonials',
-                start: 'top center'
-            },
-            opacity: 0,
-            x: -50,
-            stagger: 0.2,
-            duration: 1
-        });
-    </script>
-</body>
-</html>
