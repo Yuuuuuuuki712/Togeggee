@@ -355,7 +355,7 @@
                 <div class="consultant-profile">
                     <img src="スクリーンショット 2024-06-24 4.13.12.png" alt="佐藤 美咲" class="consultant-image">
                     <div>
-                        <h3>佐藤 美咲</h3>
+                        <h3>Toooooge DAIKI</h3>
                         <p>キャリアコンサルタント。Fortune 500企業でのHR経験を活かし、クライアントのキャリア戦略を支援。</p>
                     </div>
                 </div>
