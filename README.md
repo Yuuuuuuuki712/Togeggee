@@ -14,7 +14,7 @@
             --accent-color: #e74c3c;
             --background-color: #ecf0f1;
             --text-color: #2c3e50;
-            --light-text-color: #ffffff;
+            --light-text-color: #000000;
         }
 
         * {
