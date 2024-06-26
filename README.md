@@ -338,12 +338,12 @@
                 <h2 class="section-title">成功事例</h2>
                 <div class="testimonial-grid">
                     <div class="testimonial">
-                        <p>"LIFE SHIFTのコンサルティングを受けて、私の人生は180度変わりました。起業への不安が自信に変わり、今では自分の会社を経営しています。"</p>
-                        <p><strong>田中 健太郎</strong> - 32歳、起業家</p>
+                        <p>"DAIKIさんに相談して、大学院の中退を決意しました。今までの価値観が間違っていたことが分かり、心が楽になりました。"</p>
+                        <p><strong>U.Y.</strong> - 25歳、ニート</p>
                     </div>
                     <div class="testimonial">
-                        <p>"キャリアの停滞感に悩んでいましたが、LIFE SHIFTのサポートで新たな可能性を見出すことができました。今は、より充実した毎日を送っています。"</p>
-                        <p><strong>鈴木 美香</strong> - 28歳、マーケティング専門家</p>
+                        <p>"キャリアの停滞感に悩んでいましたが、DAIKIさんのサポートで新たな可能性を見出すことができました。今は、より充実した毎日を送っています。"</p>
+                        <p><strong>O.T.</strong> - 24歳、コンサル</p>
                     </div>
                 </div>
             </div>
